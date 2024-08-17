@@ -1,6 +1,6 @@
 # vladtabakov.com
 
-My personal website, made with Astro
+My personal website, made with Astro for now but can change in the future. 
 
 
 
@@ -17,6 +17,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
