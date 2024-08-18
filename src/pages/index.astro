@@ -19,11 +19,13 @@ const posts = (await getCollection("blog")).sort(
 	<body>
 		<Header />
 		<main>
-			<h1>Hey, I'm Vlad</h1>
+			<h1>Hey, I'm Vlad👋</h1>
 			<p>
-				I am a backend engineer mainly working with
+				I am a software engineer and mostly work with
 				python. Currently live in Berlin and speak
-				Russian, English and pretty bad German.
+				Russian, English and learning German. I mostly
+				write for fun about tech, what im up to and
+				sometimes current events.
 			</p>
 
 			<h2>Posts</h2>
@@ -43,7 +45,7 @@ const posts = (await getCollection("blog")).sort(
 								<a
 									href={`/blog/${post.slug}/`}
 								>
-									<h4 class="title">
+									<h4 class="title underline">
 										{
 											post
 												.data
@@ -56,8 +58,8 @@ const posts = (await getCollection("blog")).sort(
 					))
 				}
 			</ul>
-			<h2>More about me</h2>
-			<h2>Socials</h2>
+			<!--<h2>More about me</h2>-->
+			<!--<h2>Socials</h2>-->
 		</main>
 
 		<Footer />

@@ -1,8 +1,10 @@
 
 ---
-interface Props {
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"time"> & {
 	date: Date;
-}
+};
 
 const { date, ...attrs } = Astro.props;
 ---

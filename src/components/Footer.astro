@@ -1,4 +1,6 @@
 ---
+import { Fragment } from "astro/jsx-runtime";
+import linkedin from "/linkedin.svg?raw"; 
 const today = new Date();
 ---
 
@@ -23,13 +25,21 @@ const today = new Date();
 					></path></svg
 				>
 			</a>
-		
+		<a
+				href="https://linkedin.com/in/vlad-tabakov"
+				target="_blank"
+			>
+				<span class="sr-only">My linkedin</span>
+				<span style="width:32px; height:32px;color: var(--black);display:inline-block"> 
+			  	<Fragment set:html={linkedin}/>
+				</span>
+			</a>
 	</div>
 </footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		/*background: linear-gradient(var(--gray-gradient)) no-repeat;*/
 		color: rgb(var(--gray));
 		text-align: center;
 	}
