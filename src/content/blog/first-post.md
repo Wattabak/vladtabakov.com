@@ -2,6 +2,7 @@
 title: 'Challenging myself to use vim'
 description: 'Trying to figure out how to fit vim in my programming setup.'
 pubDate: 'Aug 16 2024'
+tags: ['vim', 'programming', 'learning']
 # heroImage: '/blog-placeholder-3.jpg'
 ---
 
