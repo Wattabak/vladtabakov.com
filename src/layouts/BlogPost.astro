@@ -55,6 +55,8 @@ const { title, description, pubDate, updatedDate, tags, heroImage } =
       .tag {
         background: var(--accent);
         color: white;
+        font-weight: 300;
+        font-size: 0.8em;
       }
     </style>
   </head>
@@ -84,9 +86,12 @@ const { title, description, pubDate, updatedDate, tags, heroImage } =
               }
               <ul class="tag-cloud flex gap-2 text-bgColor">
                 {
-                  tags.map((tag) => (
-                    <li class="flex-initial rounded-lg tag p-1 mt-3">{tag}</li>
-                  ))
+                  tags &&
+                    tags.map((tag) => (
+                      <li class="flex-initial rounded-lg tag p-1 mt-3">
+                        {tag}
+                      </li>
+                    ))
                 }
               </ul>
             </div>
